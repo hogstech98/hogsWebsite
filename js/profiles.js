@@ -233,7 +233,7 @@ const memberData = {
 					"size": "thumbnail"
 				},
 				{
-					"URL": "images/portfolio/modals/m_will_ebmeyer.jpg",
+					"URL": "images/portfolio/modals/m_will_ebmeyer.JPG",
 					"size": "full"
 				}
 			],
@@ -249,7 +249,7 @@ const memberData = {
 					"size": "thumbnail"
 				},
 				{
-					"URL": "images/portfolio/modals/m_amir_ibrahim.jpg",
+					"URL": "images/portfolio/modals/m_amir_ibrahim.JPG",
 					"size": "full"
 				}
 			],
@@ -281,7 +281,7 @@ const memberData = {
 					"size": "thumbnail"
 				},
 				{
-					"URL": "images/portfolio/modals/m_adam_murtha.jpg",
+					"URL": "images/portfolio/modals/m_adam_murtha.JPG",
 					"size": "full"
 				}
 			],
