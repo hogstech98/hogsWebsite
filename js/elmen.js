@@ -180,6 +180,15 @@ class Elmen {
 	 */
 	withListeners(...listeners) {
 		let options;
+<<<<<<< HEAD
+		for (let config of listenerConfigs) {
+			options = Object.assign(Object.create(null), config);
+			delete options.type;
+			delete options.listner;
+			this._element.addEventListener(config.type, config.listner, options);
+		}
+		return this;
+=======
 		for (let config of listenerConfigs) {
 			options = Object.create(null);
 			Object.assign(options, config);
@@ -187,6 +196,7 @@ class Elmen {
 			delete options.listner;
 			this._element.addEventListener(config.type, config.listner, options);
 		}
+>>>>>>> 11bb192de0c72971ba01e813848668add610496b
 	}
 
 	/**
@@ -198,6 +208,10 @@ class Elmen {
 		for (let func of functions) {
 			func.apply(globalThis, [this._element]);
 		}
+<<<<<<< HEAD
+		return this;
+=======
+>>>>>>> 11bb192de0c72971ba01e813848668add610496b
 	}
 };
 
