@@ -180,15 +180,16 @@ class Elmen {
 	 */
 	withListeners(...listeners) {
 		let options;
-		for (let config of listenerConfigs) {
-			options = Object.create(null);
-			Object.assign(options, config);
+		for (let config of listeners) {
+			options = Object.assign(Object.create(null), config);
+			
 			delete options.type;
-			delete options.listner;
-			this._element.addEventListener(config.type, config.listner, options);
+			delete options.listener;
+			this._element.addEventListener(config.type, config.listener, options);
 		}
+		return this;
 	}
-
+	
 	/**
 	 * This runs the provided functions, in order, on the element. Each function takes in only the element as an argument.
 	 * @param {...function} functions functions to run on the element
@@ -198,6 +199,7 @@ class Elmen {
 		for (let func of functions) {
 			func.apply(globalThis, [this._element]);
 		}
+		return this;
 	}
 };
 
